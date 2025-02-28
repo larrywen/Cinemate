@@ -3,7 +3,7 @@ import {Card} from "../components"
 import { useFetch } from "../hooks/useFetch";
 import { useTitle } from "../hooks/useTitle";
 
-export const Search = (apiPath) => {
+export const Search = ({apiPath}) => {
   const [searchParams] = useSearchParams();
   const queryTerm = searchParams.get("q"); //http://localhost:3000/search?q=avatar
 //console.log(queryTerm);
